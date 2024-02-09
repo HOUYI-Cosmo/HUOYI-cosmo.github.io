@@ -1,0 +1,18 @@
+.beyond-container {
+  position: relative;
+  background-color: #fff;
+  .beyond {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:780px;
+    background-image: url(/assets/images/beyond/beyond.JPG);
+    h1 {
+      color: #000000;
+      transform: translate3d(10%, 50%, 0);
+      position: relative;
+      font-size: 300%;
+      z-index: 1;
+    }
+  }
+}

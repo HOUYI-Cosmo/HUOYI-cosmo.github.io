@@ -1,0 +1,79 @@
+.contact-container {
+  min-height: 780px;
+  position: relative;
+  margin: 20px 0px 20px 0px;
+  background-color: #fff;
+  .invite {
+    margin: 20px 0 20px 0;
+    padding: 100px 20px ;
+    background-color: #fff;
+    background-image: url(https://jila.colorado.edu/~ajsh/courses/astr2010_22/evol/science-cosmology-banner1.jpg);
+    background-size: 117%;
+    background-position: 0px 49%;
+    h1 {
+      position: relative;
+      margin-left: 16%;
+      font-size: 50px;
+      color: #fff;
+      font-weight: 500;
+    }
+  }
+  z-index: 1;
+}
+
+.columns {
+  display: flex;
+  margin: 20px 15%;
+  padding: 20px 20px 20px 20px;
+  background-color: #fff;
+  justify-content: space-between;
+  .column {
+    width: 50%;
+    margin-right: 20px;
+    margin-left: 20px;
+    h1 {
+      /* color: rgba(216, 59, 41, 1); */ 
+      font-size: 30px;
+      font-weight: 500;
+    }
+    p {
+      margin-top: 10px;
+      font-size: 20px;
+    }
+    ul {
+      margin-top: 20px;
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.map-info { 
+  margin: 0 auto; width: 400px; height: 400px; 
+} 
+.amap-container{
+  height: 100%;
+}
+.myinfowindow{
+  width: 240px;
+  min-height: 50px;
+}
+.myinfowindow h5{ 
+  height: 20px; 
+  line-height: 20px; 
+  overflow: hidden; 
+  font-size: 14px; 
+  font-weight: bold; 
+  width: 220px; 
+  text-overflow: ellipsis;
+  word-break: break-all; 
+  white-space: nowrap; 
+}
+.myinfowindow div{
+  margin-top: 10px; 
+  min-height: 40px; 
+  line-height: 20px; 
+  font-size: 13px; 
+  color: #6f6f6f; 
+}

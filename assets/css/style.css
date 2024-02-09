@@ -1,0 +1,557 @@
+/* ---------------------------------------------
+Table of contents
+------------------------------------------------
+01. font & reset css
+02. reset
+03. global styles
+04. header
+05. banner
+06. features
+07. testimonials
+08. contact
+09. footer
+
+--------------------------------------------- */
+/* 
+---------------------------------------------
+font & reset css
+--------------------------------------------- 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+/* 
+---------------------------------------------
+reset
+--------------------------------------------- 
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header, nav, section, article, aside, footer, hgroup {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #1e1e1e;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 700;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #4a4a4a;
+}
+
+img {
+  width: 100%;
+  overflow: hidden;
+}
+
+/*
+---------------------
+Global Styles
+---------------------
+*/
+html, 
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+  background: #0071f8;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #0071f8;
+  color: #fff;
+}
+
+.section {
+  margin-top: 120px;
+}
+
+.section-heading {
+  margin-bottom: 70px;
+}
+
+.section-heading h2 {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 20px;
+  line-height: 56px;
+}
+
+.section-heading h2 em {
+  font-style: normal;
+  color: #0071f8;
+}
+
+.section-heading h6 {
+  color: #ee626b;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.icon-button a {
+  display: inline-block;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  height: 50px;
+  line-height: 50px;
+  padding: 0px 30px 0px 0px;
+  border-radius: 25px;
+  transition: all .3s;
+}
+
+.icon-button a i {
+  background-color: #f35525;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 50px;
+  display: inline-block;
+  margin-right: 15px;
+  margin-left: -1px;
+}
+
+.icon-button a:hover {
+  color: #d83b29;
+}
+
+.icon-button a:hover i {
+  color: #fff;
+}
+
+.split {
+  background-color: rgba(216, 59, 41,0.5);
+  height: 3px;
+  width: 100%;
+}
+
+/* 
+---------------------------------------------
+Header Style
+--------------------------------------------- 
+*/
+.hide{
+  z-index: 0;
+}
+.header-area {
+  position: relative;
+  background-color: #fff;
+  -webkit-transition: all .5s ease 0s;
+  -moz-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  margin-right: 10px;
+  .col-12 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .year{
+    margin-bottom: 10px;
+    padding-right: 20px;
+    width: 200px;
+    img {
+      height: 90px;
+      object-fit: scale-down;
+    }
+    h2 {
+      font-size: 120%;
+      color: #d83b29;
+      overflow: visible !important;
+    }
+  }
+}
+
+/* logo */
+.header-area .col-12 .logo {
+  width: 300px;
+  margin-top: 10px;
+  margin-left: 60px;
+  margin-right: 30px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  display: inline-block;
+  z-index: 2;
+  h1 {
+    line-height: 50px;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #1e1e1e;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  @media (max-width: 1780px) {
+    width: 600px;
+    position: center;
+    left: 30px;
+    top: 0px;
+  }
+}
+/* hamburger-icon */
+.header-area .hamburger-icon {
+  display: none;
+  
+}
+@media (max-width: 1780px) {
+    .header-area .hamburger-icon {
+      display: block;
+      margin-right: 50px;
+      background-color: none;
+      align-items: bottom;
+      position: relative;
+      z-index: 2;
+      cursor: pointer;
+      height: 50px;
+      span {
+        height: 5px;
+        width: 40px;
+        background-color: #1e1e1e;
+        display: block;
+        margin: 5px 0px 5px 0px;
+        transition: 0.7s ease-in-out;
+        transform: none;
+        cursor: pointer;
+      }
+      span:nth-of-type(1){
+        background-color: #d83b29;
+      }
+      span:nth-of-type(4){
+        background-color: #d83b29;
+      }
+    }
+  } 
+.header-area input{
+  display: none;
+  opacity: 0;
+}
+@media (max-width: 1780px) {
+  .header-area input{
+    display: flex;
+  }
+}
+
+/* navigation */
+.header-area .main-nav {
+  height: 120px;
+  background: transparent;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-area .main-nav ul#nav {
+  top: 30px;
+  flex-basis: 100%;
+  height: 120px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  z-index: 2;
+}
+
+.header-area .main-nav #nav li {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100px;
+  line-height: 100px;
+}
+
+.header-area .main-nav li a {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 500;
+  font-size: 19px;
+  height: 40px;
+  line-height: 40px;
+  text-transform: capitalize;
+  transform: translateY(90%);
+  color: #1e1e1e;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  border: transparent;
+  letter-spacing: .25px;
+}
+
+.header-area .main-nav #nav li a:hover{
+  color: #d83b29;
+}
+
+.header-area .main-nav #nav li a.active {
+  color: #d83b29;
+}
+
+.visible{
+  display:inline !important;
+}
+
+
+@media (max-width: 1780px) {
+  /**/
+  .header-area {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+  }
+  .header-area .main-nav{
+    width: 100%;
+    z-index: 2;
+    margin: 0px;
+    top: 1%;
+    padding-bottom: 600px;
+    position: absolute;
+    display: none;
+    opacity: 0;
+    background-color: transparent;
+  }
+  .header-area .main-nav #nav {
+    background-color: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .header-area .main-nav ul#nav {
+    background-color: #ffffff;
+    top: 0px;
+  }
+  .header-area .main-nav #nav li {
+    line-height: 0px;
+    position: relative;
+  }
+  .header-area .main-nav #nav li a {
+    margin-left: 45%;
+    display: block;
+    line-height: 50px;
+    height: 50px;
+    font-weight: 500;
+    color: #1e1e1e;
+  }
+  
+  #openmenu:checked ~ .main-nav {
+    opacity: 1;
+    display: flex;
+    transform: translateY(150px);
+    background-color: #ffffff;
+    flex-direction: column;
+  }
+  
+  #openmenu:checked ~ .header-area .col-12 .logo {
+    display: none;
+  }
+  
+  #openmenu:checked ~ .hamburger-icon span:nth-of-type(2) {
+    transform: translate(0%, 175%) rotate(-45deg);
+  }
+  
+  #openmenu:checked ~ .hamburger-icon span:nth-of-type(3) {
+    transform: rotate(45deg);
+  }
+  
+  #openmenu:checked ~ .hamburger-icon span:nth-of-type(1) {
+    opacity: 0;
+  }
+  
+  #openmenu:checked ~ .hamburger-icon span:nth-of-type(4) {
+    opacity: 0;
+  }
+}
+
+
+/* 
+---------------------------------------------
+Overview Style
+--------------------------------------------- 
+*/
+.overview-container {
+  z-index: 1;
+  position: relative;
+  background-color: #fff;
+  min-height: 780px;
+  .header-text {
+    position: relative;
+    left: -120px;
+  }
+
+  .item {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*padding: 350px 20% 500px 20%;*/
+    min-height: 780px;
+  }
+
+  .item-1 {
+    background-image: url(/assets/images/gallery/2.jpg);
+    background-position-y: 90%;
+    background-size: cover;
+  }
+
+  .item-2 {
+    background-image: url(/assets/images/d.jpg);
+    background-position-y: bottom -100px;
+    background-size: cover;
+  }
+  .item-3 {
+    background-image: url(https://www.skao.int/sites/default/files/styles/background/public/2022-06/SKA%20at%20daytime.jpg);
+  }
+
+  .owl-dots {
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+  
+    .owl-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #fff;
+      border: 2px solid #fff;
+      margin-right: 10px;
+      transition: all .5s;
+    }
+  
+    .active{
+      background-color: #d83b29;
+      border: 2px solid #d83b29;
+    }
+  }
+
+  .owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 1;
+    
+    .owl-prev, .owl-next{
+      i {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 24px;
+        display: inline-block;
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        opacity: 1;
+        transition: all .3s;
+        :hover{
+          opacity: 1;
+          background-color: rgba(255, 255, 255, 0.5);
+        }
+      }
+    } 
+  
+    .owl-prev i {
+      position: absolute;
+      left: 45px;
+    }
+    .owl-next i {
+      position: absolute;
+      right: 45px;
+    }
+  }
+}
+
+/* 
+---------------------------------------------
+Footer Style
+--------------------------------------------- 
+*/
+
+footer {
+  margin-top: 0px;
+  background-color: #1e1e1e;
+  min-height: 100px;
+  z-index: 1;
+}
+
+footer p {
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+footer p a {
+  color: #fff;
+  transition: all .3s;
+  position: relative;
+  z-index: 1;
+}

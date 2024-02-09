@@ -1,0 +1,19 @@
+.data-container {
+  position: relative;
+  background-color: #fff;
+  .data {
+    background-color: #000000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height:780px;
+    background-image: url(https://earimediaprodweb.azurewebsites.net/Api/v1/Multimedia/b4501734-b2c6-4acf-8f90-81527f467009/Rendition/low-res/Content/Public);
+    h1 {
+      color: #fff;
+      transform: translate3d(10%, 300%, 0);
+      position: relative;
+      font-size: 300%;
+      z-index: 1;
+    }
+  }
+}
