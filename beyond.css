@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height:780px;
-    background-image: url(/assets/images/beyond/beyond.JPG);
+    background-image: url(images/beyond/beyond.JPG);
     h1 {
       color: #000000;
       transform: translate3d(10%, 50%, 0);
