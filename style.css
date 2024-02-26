@@ -405,7 +405,9 @@ Header Style
   #openmenu:checked ~ .main-nav {
     opacity: 1;
     display: flex;
-    transform: translateY(150px);
+    /* year is removed. adjust the tranformation
+    transform: translateY(150px); */
+    transform: translateY(50px);
     background-color: #ffffff;
     flex-direction: column;
   }
@@ -429,6 +431,11 @@ Header Style
   #openmenu:checked ~ .hamburger-icon span:nth-of-type(4) {
     opacity: 0;
   }
+}
+
+.year {
+  opacity: 0;
+  display: none;
 }
 
 
